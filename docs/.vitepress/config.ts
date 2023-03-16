@@ -4,7 +4,7 @@ import { withMermaid } from 'vitepress-plugin-mermaid'
 export default withMermaid(
   // https://vitepress.dev/reference/site-config
   defineConfig({
-    base: '/site/',
+    base: '/vosdok/',
     title: 'Vostok',
     description: 'The Documentation',
     themeConfig: {
