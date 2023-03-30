@@ -6,7 +6,7 @@ outline: deep
 
 ## Why Go, in the first place?
 
-Vostok is born from the desire to use Go, which comes from its amazing features:
+Vostok is born from the desire to use Go, and this language's amazing features:
 
 - Light yet powerful **concurrency** handling
 - C-grade **performance**
@@ -27,11 +27,26 @@ Vostok was first written to create programs with a certain idea on how to manage
 
 ```mermaid
 flowchart TD
-    A[Start] --> B{Is it?}
-    B -->|Yes| C[OK]
-    C --> D[Rethink]
-    D --> B
-    B ---->|No| E[End]
+    R[HTTP request]
+    S[App Server]
+    CH[App Server Child]
+    A[Authentication]
+    L[Logger]
+    D[DB connections]
+    CO[Config]
+    SCH[Job scheduler]
+    S -- reads at startup and holds --> CO
+    S -- handles request\nwith one of its --> CH
+    R -. hits .-> S
+    CH -- filters\nusers with --> A
+    CH -- write\nlogs with --> L
+    CH -- allows DB\naccess with --> D
+    S -- runs scheduled\njobs using the --> SCH
+    A -. is configured\nthrough .-> CO
+    L -. is configured\nthrough .-> CO
+    D -. is configured\nthrough .-> CO
+    SCH -. is configured\nthrough .-> CO
+
 ```
 
 The **core** of Vostok provides other [features](../core/features.md), such as [authentication](../core/features.md) and a [job scheduler](../core/features.md).
