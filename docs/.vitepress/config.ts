@@ -12,21 +12,36 @@ export default withMermaid(
       // https://vitepress.dev/reference/default-theme-config
       nav: [
         { text: 'Home', link: '/' },
-        { text: 'Examples', link: '/markdown-examples' },
+        { text: 'Features', link: '/02-features.md' },
       ],
 
       sidebar: [
         {
-          text: 'Examples',
+          text: 'Getting started',
+          collapsed: false,
           items: [
-            { text: 'Markdown Examples', link: '/markdown-examples' },
-            { text: 'Runtime API Examples', link: '/api-examples' },
+            { text: 'Why Vostok?', link: '/intro/why' },
+            { text: 'How to start', link: '/intro/start' },
+          ],
+        },
+        {
+          text: 'Core features',
+          collapsed: false,
+          items: [
+            { text: 'Overview', link: '/core/features' },
+          ],
+        },
+        {
+          text: 'Geen',
+          collapsed: false,
+          items: [
+            { text: 'Intro', link: '/geen/intro' },
           ],
         },
       ],
 
       socialLinks: [
-        { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
+        { icon: 'github', link: 'https://bitbucket.org/oscaroscar/vostok' },
       ],
     },
   }),

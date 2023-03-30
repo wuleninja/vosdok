@@ -4,24 +4,23 @@ layout: home
 
 hero:
   name: "Vostok"
-  text: "A Wannabe Progressive Documentation"
+  text: "A Progressive Go Framework"
   image:
     src: /logo_vostok.png
-  tagline: We're just getting started!
+  tagline: From simple HTTP servers to complex RESTful applications
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Why Vostok?
+      link: /intro/why
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Getting Started
+      link: /intro/start
 
 features:
-  - title: Geen
-    details: The powerfull applicative package used throughout Autopass
-  - title: Diablo 3
-    details: The best in the Universe and History
-  - title: Finance
-    details: Shitstorming right now
+  - title: Configurable HTTP servers
+    details: A simple way to develop pooled HTTP servers, with logging and DB access capabilities
+  - title: Quick REST apps development
+    details: The <b><em>code-first</em></b> approach allows for rapid CRUD app dev, with no SQL script nor Swagger file 
+  - title: Useful applicative packages
+    details: Users & groups administration, task engine, and more in the future
 ---
-
