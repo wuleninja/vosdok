@@ -19,7 +19,11 @@ Vostok is born from the desire to use Go, which comes from its amazing features:
 
 ## Why another Go framework?
 
-Vostok was first written to create programs with a certain idea on how to manage a [pooled HTTP server](TODO), [configure](TODO) it, having it write to [log](TODO) files, and connect to [databases](TODO).
+::: danger TODO
+Update the links below
+:::
+
+Vostok was first written to create programs with a certain idea on how to manage a [pooled HTTP server](../core/features.md), [configure](../core/features.md) it, having it write to [log](../core/features.md) files, and connect to [databases](../core/features.md).
 
 ```mermaid
 flowchart TD
@@ -30,9 +34,9 @@ flowchart TD
     B ---->|No| E[End]
 ```
 
-The **core** of Vostok provides other [features](../core/features.md), such as [authentication](TODO) and a [job scheduler](TODO).
+The **core** of Vostok provides other [features](../core/features.md), such as [authentication](../core/features.md) and a [job scheduler](../core/features.md).
 
-::: tip
+::: tip That's why
 With Vostok, developers benefit from these basic capabilities, don't have to develop or import them from various places, and work in a **homogenous** environment.
 :::
 
